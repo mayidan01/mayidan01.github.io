@@ -68,10 +68,8 @@ li{
     margin: auto;
 }
 
-
-
-
-
-
-
-
+#footer p{
+    text-align: center;
+    padding: 20px 60px 20px 60px;
+    font-size: 18px;
+}
