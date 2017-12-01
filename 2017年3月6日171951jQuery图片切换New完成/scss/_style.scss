@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #f0f0f0;
+}
+
+ul::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.container {
+  width: 960px;
+  /*整体的宽度*/
+  margin: auto;
+}
+
+.logo {
+  h1 {
+    padding: 50px;
+    text-align: center;
+    font-size: 0;
+    font-family: 宋体;
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 20px;
+    }
+    small {
+      display: block;
+      font-size: 12px;
+      font-weight: 300;
+      color: #777;
+    }
+  }
+}
+
+#box {
+  width: 960px;
+  /*整体的宽度*/
+  height: 338px;
+  /*整体高度*/
+  overflow: hidden;
+  /* 溢出隐藏*/
+  margin: auto;
+}
+
+#box ul {
+  width: 2000px;
+}
+
+#box ul li {
+  float: left;
+  padding-right: 2px;
+}
+
+#box ul li:last-child {
+  padding-right: 0;
+}
+
+#box ul li a {
+  display: block;
+  width: 88px;
+  /*默认宽度*/
+  height: 338px;
+  /*背景图片高度*/
+  background-size: cover;
+  position: relative;
+}
+
+#box ul li .one {
+  background-image: url(../img/1.jpg);
+}
+
+#box ul li .two {
+  background-image: url(../img/2.jpg);
+}
+
+#box ul li .three {
+  background-image: url(../img/3.jpg);
+}
+
+#box ul li .four {
+  background-image: url(../img/4.jpg);
+}
+
+#box ul li .five {
+  min-width: 600px;
+  background-image: url(../img/5.jpg);
+}
+
+//2017年3月3日09:08:48 增加文字
+
+#box .five .text {
+  opacity: 1;
+  h3 {
+    top: 0;
+    opacity: 1;
+  }
+  s {
+    width: 100%;
+
+  }
+  p {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#box .text {
+  opacity: 0; //最大的父级默认完全透明
+  //opacity: 1; //鼠标移动到a的时候需要让当前的不透明度从0改变为1
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute; //定位
+  bottom: 0;
+  color: #fff;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  padding-top: 15%;
+  padding-left: 90px;
+  padding-right: 90px;
+  h3 {
+    //当当前的图片展开至600像素之后，改变h3的样式
+    //改变了 top值从-50像素改变为0，
+    //改变了不透明度，从完全透明，改变为完全不透明
+    top: -50px; //负的50像素
+    //top:0;      //0像素
+    opacity: 0;
+    //opacity: 1;
+    text-align: center;
+    position: relative; //相对定位
+    font-size: 72px;
+    text-shadow: 3px 3px 3px #000;
+    padding-bottom: 2px;
+  }
+  s {
+    //执行完了h3的效果之后，再执行 s标签
+    // 改变s标签的宽度，从默认的没有宽度
+    //让宽度增加至100%
+    width: 0;
+    //width:100%;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  p {
+    //执行完了s标签之后，执行p标签
+    //p标签的top值 从-10px 改变为0
+    //再改变p标签的不透明度，从完全透明，改变为完全不透明
+    top: -10px;
+    //top:0;
+    opacity: 0;
+    //opacity: 1;
+    position: relative;
+    font-size: 18px;
+  }
+}
