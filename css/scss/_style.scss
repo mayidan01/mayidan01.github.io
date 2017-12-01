@@ -1,0 +1,223 @@
+/*
+ * 初始化
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Arial;
+}
+
+body {
+  //background-color: #f1f1f1;
+  //        background-image: url(../img/bgi.png);
+  background-size: cover;
+  color: #72777c;
+  font-size: 14px;
+}
+
+.clearfix::after {
+  //清除浮动
+  display: table;
+  clear: both;
+  content: "";
+}
+
+#__bs_notify__ {
+  //删除browser-sync重载浏览器时候的（短暂）黑框提示
+  display: none !important;
+}
+
+/*
+ * 表单验证
+ */
+
+p {
+  font-size: .75rem;
+  //    height: .75rem;
+  margin-bottom: 10px;
+}
+
+#login {
+  max-width: 400px;
+  padding: 8% 0;
+  margin: auto;
+  h1 {
+    text-align: center;
+    a {
+      display: block;
+      margin: 0 auto 25px;
+      background-image: url(../img/logo.jpg);
+      background-size: 120px;
+      background-position: center top;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      height: 120px;
+      width: 120px;
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  form {
+    margin-top: 20px;
+    padding: 26px 24px 46px 90px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .13);
+  }
+}
+
+label {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  font-size: .75rem;
+  margin-bottom: .25rem;
+  display: inline-block;
+  width: 70px;
+  position: relative;
+  left: -75px;
+  top: 32px;
+  text-align: right;
+}
+
+input,
+textarea {
+  //设置 4 个边框的样式
+  outline: none;
+  border: 1px solid #ddd;
+  border-left-width: 1px;
+  transition: border-left-width .1s;
+  &[type=text],
+  &[type=password] {
+    // &[type=text]
+    margin: 2px 0;
+    width: 100%;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    background: #fbfbfb;
+    padding: 10px;
+    margin-bottom: 5px;
+    &:focus {
+      transition: border-left-width .1s;
+      border-left-width: 3px;
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+#button {
+  input {
+    cursor: pointer;
+  }
+}
+
+[class*="text-"] {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  padding-left: 16px;
+}
+
+.text-muted {
+  color: #777;
+  background-position: 0 0;
+}
+
+.text-danger {
+  color: #a94442;
+  background-position: 0 -24px;
+}
+
+.text-success {
+  color: #3c763d;
+  background-position: 0 -12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0275d8;
+  background-image: none;
+  display: block;
+  width: 100%;
+  transition: .5s;
+}
+
+.btn:focus,
+.btn:hover {
+  text-decoration: none;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b;
+}
+
+.btn-secondary {
+  color: #ccc;
+  background-color: transparent;
+  border-color: #ccc;
+}
+
+.btn-secondary:focus,
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #ccc;
+  border-color: #bbb;
+}
+
+
+//获取验证码
+#xcode{
+  position: relative;
+}
+.getCode{
+  position: absolute;
+  right: 1px;
+  top: 20px;
+  border:0;
+  background: #0275d8;
+  color: #ffffff;
+  font-size: 12px;
+  height: 38px;
+  width: 80px;
+  line-height: 38px;
+  cursor: pointer;
+  transition: background .5s;
+  &:hover{
+    background-color: #025aa5;
+  }
+}
+//验证码不可点击
+.getCode.codeHide{
+  color: #949494;
+  background-color: #eee;
+}
+#getCode[disabled]{
+  cursor: no-drop;
+}

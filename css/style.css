@@ -1,0 +1,23 @@
+ header h1 {
+            margin: 100px 20px;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 20px auto;
+        }
+		.card-columns .card{
+		margin-bottom: 1.5rem;
+		}
+		img{
+		width:100%;
+		}
+	.text-center{
+		width: 80%;
+		margin: auto;
+	}
+	.card img{
+	width: 20%;
+	height: 20%;
+	}
+	
