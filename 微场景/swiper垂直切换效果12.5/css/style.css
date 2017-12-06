@@ -14,26 +14,19 @@
       width: 100%;
       height: 100%;
     }
-
     .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
 
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
     }
+.swiper-button-next, .swiper-container-rtl  {
+   transform: rotate(90deg);
+    right: 50%;
+    left: auto;
+    position: absolute;
+    top:680px;
+}
 .swiper-button-next {
     right: 50%;
     left: auto;
@@ -42,45 +35,46 @@
     transform:rotate(90deg)
     
 }
-.si{
-    background-image: url(../img/bj.png)
+.swiper-slide{
+    background: url(../img/bj.png);
 }
+
 /*第一屏开始*/
-.s1 .header img:nth-of-type(1){
-    width: 34px;
+der img:nth-of-type(1){
+    width: 32px;
     position: absolute;
-    top: 126px;
-    left: 50px;
-} 
+    top:125px;
+    left:50px;
+}
 .s1 .header img:nth-of-type(2){
     width: 65px;
     position: absolute;
-    top:90px;
-    left: 275px;
-} 
+    top:118px;
+    left:275px;
+}
 .s1 .header img:nth-of-type(3){
-    width: 56px;
+    width: 55px;
     position: absolute;
-    top: 429px;
+    top:429px;
     left:34px;
 }
 .s1 .header img:nth-of-type(4){
-    width: 46px;
+    width: 55px;
     position: absolute;
-    top:411px;
-    left: 280px;
-} 
+    top:410px;
+    left:279px;
+}
 .s1 .header img:nth-of-type(5){
+    width:55%;
+    position: relative;
+    top: 193px;
+    left: -35px;
+}
+.main img{
     width: 50%;
-    position: absolute;
-    top: 164
-        px;
-    left: 69px;
-} 
 
-
-
-
-
+    
+    
+}
 
 /*第一屏结束*/
