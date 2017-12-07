@@ -1,4 +1,9 @@
- html, body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
       position: relative;
       height: 100%;
     }
@@ -65,24 +70,29 @@ der img:nth-of-type(1){
     left:279px;
 }
 .s1 .header img:nth-of-type(5){
-    width:55%;
+    width:60%;
     position: relative;
     top: 193px;
     left: -35px;
 }
+.main{
+    position:relative;
+}
 .main img:nth-of-type(1){
     width: 40%;
-    position: relative;
-    margin-top: 25px;
 }
 .main img:nth-of-type(2){
     width: 70%;
-    position: relative;
+    margin-bottom: 22px;
+
 }
 
 .img9{
     background:url(../img/9.png);
-    width: 60%;
+    background-size: contain;
+    width: 207px;
+    height: 25px;
+    line-height: 25px;
     margin: auto;
     font-size:14px;
     border-radius: 20px;
@@ -95,13 +105,13 @@ der img:nth-of-type(1){
 .footer img:nth-of-type(1){
     width: 124%;
     position: relative;
-    top: 15px;
+    top: 41px;
     left: -20px;
 }
 .footer img:nth-of-type(2) {
     width: 124%;
     position: relative;
-    top: -47px;
-    left: -62px;
+    top: -22px;
+    left: -75px;
 }
 /*第一屏结束*/
