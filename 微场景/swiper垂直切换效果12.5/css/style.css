@@ -70,11 +70,38 @@ der img:nth-of-type(1){
     top: 193px;
     left: -35px;
 }
-.main img{
-    width: 50%;
-
-    
-    
+.main img:nth-of-type(1){
+    width: 40%;
+    position: relative;
+    margin-top: 25px;
+}
+.main img:nth-of-type(2){
+    width: 70%;
+    position: relative;
 }
 
+.img9{
+    background:url(../img/9.png);
+    width: 60%;
+    margin: auto;
+    font-size:14px;
+    border-radius: 20px;
+}
+.footer{
+    margin-top: 125px;
+    color: #00ffd2;
+    font-size: 16px;
+}
+.footer img:nth-of-type(1){
+    width: 124%;
+    position: relative;
+    top: 15px;
+    left: -20px;
+}
+.footer img:nth-of-type(2) {
+    width: 124%;
+    position: relative;
+    top: -47px;
+    left: -62px;
+}
 /*第一屏结束*/
