@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
 }
 html, body {
       position: relative;
@@ -25,93 +25,173 @@ html, body {
       background: #fff;
 
     }
-.swiper-button-next, .swiper-container-rtl  {
-   transform: rotate(90deg);
-    right: 50%;
-    left: auto;
-    position: absolute;
-    top:680px;
+    .swiper-button-next{
+    	 
+    	 right:auto;
+    	 margin-left: -13.5px;
+    	 left:50%;
+    	 top:auto;
+    	 bottom:5%;
+    	 transform: rotate(90deg);
+    }
+/*s1 第一屏 样式 -开始*/
+.s1,.s2{
+    position: relative;
+    height: 100%;
+    background:url(../img/bj.png);
 }
-.swiper-button-next {
-    right: 50%;
-    left: auto;
+.s1 .header img{
     position: absolute;
-    top: 80%;
-    transform:rotate(90deg)
-    
 }
-.swiper-slide{
-    background: url(../img/bj.png);
-}
-
-/*第一屏开始*/
-der img:nth-of-type(1){
-    width: 32px;
-    position: absolute;
-    top:125px;
+.s1 .header img:nth-of-type(1){
+    width: 34px;
+    top: 126px;
     left:50px;
 }
 .s1 .header img:nth-of-type(2){
-    width: 65px;
-    position: absolute;
-    top:118px;
-    left:275px;
+    width:63px;
+    top:90px;
+    right: 39px;
 }
 .s1 .header img:nth-of-type(3){
-    width: 55px;
-    position: absolute;
-    top:429px;
-    left:34px;
+    width:58px;
+    bottom:195px;
+    left: 34px;
 }
 .s1 .header img:nth-of-type(4){
-    width: 55px;
-    position: absolute;
-    top:410px;
-    left:279px;
+    width:48px;
+    bottom:211px;
+    right:49px;
 }
 .s1 .header img:nth-of-type(5){
-    width:60%;
-    position: relative;
-    top: 193px;
-    left: -35px;
+    width:70%;
+    left: 50%;
+    top: 25%;
+    margin-left: -35%;
 }
-.main{
-    position:relative;
+.s1 .main{
+    position: absolute;
+    top:30%;
 }
-.main img:nth-of-type(1){
+.s1 .main img:nth-of-type(1){
     width: 40%;
 }
-.main img:nth-of-type(2){
+.s1 .main img:nth-of-type(2){
     width: 70%;
-    margin-bottom: 22px;
-
+    margin-bottom: 20px;
 }
-
-.img9{
+.s1 .main p{
+    color: #000;
     background:url(../img/9.png);
-    background-size: contain;
     width: 207px;
-    height: 25px;
+    height: 24px;
+    font-size: 18px;
+    background-size:contain;
+    margin:auto;
+    font-weight:bold;
     line-height: 25px;
-    margin: auto;
-    font-size:14px;
-    border-radius: 20px;
 }
-.footer{
-    margin-top: 125px;
-    color: #00ffd2;
-    font-size: 16px;
+.s1 .footer{
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    color: #00d6a8;
 }
-.footer img:nth-of-type(1){
-    width: 124%;
-    position: relative;
-    top: 41px;
-    left: -20px;
+.s1 .footer p:nth-of-type(2){
+    margin-bottom: 35px;
 }
-.footer img:nth-of-type(2) {
-    width: 124%;
-    position: relative;
-    top: -22px;
-    left: -75px;
+.s1 .footer p:nth-of-type(3){
+    height: 70px;
 }
-/*第一屏结束*/
+.s1 .footer img{
+    position: absolute;
+    height: 70px;
+}
+.s1 .footer img:nth-of-type(1){
+    left: 0;
+}
+.s1 .footer img:nth-of-type(2){
+    left:-95px;
+}
+
+
+
+
+/*                    第二屏*/
+.s2{
+	color:#00f8ca;
+}
+.s2 h2{
+	font-size: 26px;
+	margin-top: 10px;
+	position: relative;
+	top:12%;
+}
+.s2 small{
+	font-size: 14px;
+	display: block;
+	margin-top: 10px;
+	letter-spacing:5px;
+}
+.s2 h2::before,.s2 h2::after{
+	content: "";
+	width: 80px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+}
+.s2 h2::before{
+	
+	background:url(../img/14.png);
+	background-size: contain;
+	margin-left: -95px;
+	margin-top: 10px;
+}
+.s2 h2::after{
+	
+	background:url(../img/13.png);
+	background-size: contain;
+	margin-left: 66px;
+	margin-top: 10px;
+	top:0;
+	
+}
+.s2 div{
+	position: absolute;
+	top:25%;
+	width:80%;
+	height: 380px;
+	left: 50%;
+	margin-left: -40%;
+}
+.s2 div img{
+	width:100%;
+	position: absolute;
+	left:0;
+ 	
+}
+.s2 div p{
+	text-align: left;
+	padding:0 10%;
+	font-size: 14px;
+	line-height: 2em;
+}
+.s2 div p:nth-of-type(1){
+	padding-top: 20px;
+}
+.s2 div span{
+
+    background: -webkit-linear-gradient(left, #00e7f9, #00fd9f);
+	width: 120px;
+	height: 25px;
+	border-radius: 10px;
+	font-size: 14px;
+	color:#000;
+	font-weight: bold;
+	line-height: 25px;
+	display: inline-block;
+	position: absolute;
+	bottom:-50px;
+	left:50%;
+	margin-left: -60px;
+}

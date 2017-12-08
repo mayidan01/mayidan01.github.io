@@ -1,56 +1,80 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>垂直切换</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <title>Swiper3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
+
+  <!-- Demo styles -->
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<!-- Swiper -->
+  <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-          <div class="s1">
-              <div class="header">
-                  <img src="img/1.png" alt="">
-                  <img src="img/2.png" alt="">
-                  <img src="img/3.png" alt="">
-                  <img src="img/4.png" alt="">
-                  <img src="img/6.png" alt="">
-              </div>
-              <div class="main">
-                  <img src="img/7.png" alt="">
-                  <img src="img/8.png" alt="">
-                  <p class="img9">梦想起航，再创辉煌</p>
-              </div>
-              <div class="footer">
-                  <p>盛邦升华</p>
-                  <p>2018年1月1日晚8:00-11：00</p>
-                  <p>
-                 <img src="img/10.png" alt="">
-                 <img src="img/11.png" alt="">
-                 </p>
-              </div>
-          </div>
+   <!--                第一屏-->   
+   
+   <div class="swiper-slide">
+      	
+      		<div class="s1">
+      			<div class="header">
+      			<img src="img/1.png" alt="" />
+      			<img src="img/2.png" alt="" />
+      			<img src="img/3.png" alt="" />
+      			<img src="img/4.png" alt="" />
+      			<img src="img/6.png" alt="" />
+      			</div>
+      			<div class="main">
+      				<img src="img/7.png" alt="" />
+      				<img src="img/8.png" alt="" />
+      				<p class="img9">梦想起航 再创辉煌</p>
+      			</div>
+      			<div class="footer">
+      				<p>%企业名称%</p>
+      				<p>2018年1月18日晚8：00-11：00</p>
+      				<p><img src="img/11.png" alt="" />
+      				<img src="img/10.png" alt="" /></p>
+      			</div>
+      		</div>
+      	
       </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
+      
+      
+      <!--                     第二屏-->
+      <div class="swiper-slide">
+      	<div class="s2">
+      		<h2>领导致辞<small>LEADER SPAEECH</small></h2>
+      		<div>
+      			<img src="img/12.png" alt="" />
+      			<p>亲爱的同志们,大家晚上好</p>
+      			<p>我们成立于2009年，现在有员工1300多人，我们专注于移动互联网与信息互动社区领域坚持“技术领先，理念领先，管理领先”的发展战略，2015年完成公司整体修改，变更为股份有限公司，倾力打造具有自主知识产权的高端移动设备享受更开放。便捷的互联网服务。</p>
+      			<p>我们秉着“真诚、团结、主动、责任”的企业文化，立志深圳移动互联网，打造研发和运营一体的产业链，成为移动互联网行业值得用户尊敬和信赖的公司。</p>
+      			<span>某某企业</span>
+      		</div>
+      	</div>
+      	
+      </div>
+      <div class="swiper-slide"><img src="img/3.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="img/4.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="img/5.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="img/6.jpg" alt="" /></div>
+      <div class="swiper-slide"><img src="img/7.jpg" alt="" /></div>
+ 
     </div>
-    <!-- Add Pagination -->
+    <!-- Add Pagination  小圆点 -->
     <div class="swiper-pagination"></div>
-  </div>    
-    
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
-<script src="js/script.js"></script>
+  </div>
+  <!--向右的按钮-->
+		<div class="swiper-button-next"></div>
+		
+  <!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="js/script.js"></script>
 </body>
 </html>
