@@ -349,6 +349,29 @@ h2 small{
 
 
 
+/*第五屏开始*/
+
+.s5 div{
+    background: url(../img/bj.png);
+    width: 50%;
+    float: left;
+}
+.s5::after{
+    content: "";
+    display: table;
+    
+}
+.s5 img{
+    width: 20%;
+}
+
+
+
+
+/*第五屏结束*/
+
+
+
 
 
 
