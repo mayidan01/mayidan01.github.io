@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} 
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      
+    }
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+.swiper-button-next{
+    left:50%;
+    right:auto;
+    top:auto;
+    bottom:5%;
+    margin-left: -13.5px;
+    transform:rotateZ(-90deg);
+}
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6,
+.s7{
+    background: url(../img/timg .jpg);
+    height: 100%;
+    color:#00e6b6;
+}
+
+
+
+
+
