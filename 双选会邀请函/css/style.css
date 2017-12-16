@@ -152,7 +152,10 @@ html, body {
     font-family: Arial;
     font-size: 20px;
 }
-.s1>img {
+.s1>img,
+.s3>img,
+.s4>img,
+.s5>img{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -230,7 +233,6 @@ html, body {
 /*第四屏开始*/
 .s4{
     padding-top: 15%;
-    background: url(../img/dt1.png);
 }
 .s4 h3{
     font-size: 25px;
