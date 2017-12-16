@@ -155,7 +155,8 @@ html, body {
 .s1>img,
 .s3>img,
 .s4>img,
-.s5>img{
+.s5>img,
+.s7>img{
     position: absolute;
     top: 10px;
     left: 10px;
@@ -508,7 +509,7 @@ form {
     margin: auto;
     margin-top: 26px;
     font-size: 14px;
-    color: #00f2ca;
+    color: #fff;
 }
 /*第七屏结束*/
 
