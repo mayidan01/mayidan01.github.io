@@ -122,15 +122,8 @@ html, body {
 /*    background-color: rgba(7, 29, 60, 0.47);;*/
     font-size:24px;
 }
-.s1 .main{
-    writing-mode:tb-rl;
-    margin:0 auto;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 36px;
-    margin-top: 36px;
-    text-align: left;
-}
+
+/*
 .s1 .main p{
     line-height: 32px;
 }
@@ -139,6 +132,7 @@ html, body {
 }
 .s1 .main p:nth-of-type(2){
     font-size:24px;
+*/
 }
 .s1 .footer{
     margin-top: 77px;
