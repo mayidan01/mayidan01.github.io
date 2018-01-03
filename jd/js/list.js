@@ -81,7 +81,6 @@ var swiper = new Swiper('.dv12 .swiper-container', {
         prevEl: '.swiper-button-prev',
       },
     });
- 
 //选项卡开始
  $(function(){
 	$(".main-left-top ul li").click(function(){
@@ -90,6 +89,4 @@ var swiper = new Swiper('.dv12 .swiper-container', {
 		$(this).css({"color":"red"}).siblings("li").css({"color":"#000"})
 	})
 })
-    
-
-//选项卡结束
+ //选项卡结束
